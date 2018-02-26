@@ -1,0 +1,29 @@
+Collabaritive filtering : based on measuring the similarity between users or between items. For this purpose, recommenderlab contains the similarity function. The supported methods to compute similarities are cosine,pearson and jaccard.
+
+class (moviesense) : realratingmatrix
+methods : there are many methods
+
+object:movielense
+each row:user
+each column :movie
+each value to a rating
+
+There are 943 users and 1664 movies. Since realRatingMatrix is an S4 class, the components of the objects are contained in MovieLense slots. We can see all the slots using slotNames, which displays all the data stored within an object
+
+MovieLense@data belongs to the dgCMatrix class that inherits from Matrix. In order to perform custom data exploration, we might need to access this slot.
+
+
+
+Similarity matrix:The similarity is the base of collabaritive filtering
+
+Recommedation Models:
+
+IBCF 
+UBCF
+PCA
+SVD
+
+We will use IBCF and UBCF. The recommender_models object
+The recommenderlab package is a good and flexible package to perform recommendation. If we combine its models with other R tools, we will have a powerful framework to explore the data and build recommendation models.
+
+
